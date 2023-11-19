@@ -1,30 +1,17 @@
-﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
-
-@{
-    ViewData["Title"] = "Student Body Statistics";
+﻿@{
+    ViewData["Title"] = "About us";
 }
 
-<h2>Student Body Statistics</h2>
+<h2>@ViewData["Title"]</h2>
 
-<table>
-    <tr>
-        <th>
-            Enrollment Date
-        </th>
-        <th>
-            Students
-        </th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
-                @item.StudentCount
-            </td>
-        </tr>
-    }
-</table>
+
+<p>Welcome to our About us page! My name is Andres Rodriguez and I'm excited to share my contact information</p>
+
+<p>Contact Information:</p>
+<ul>
+    <li>Email: rod16015@byui.edu</li>
+    <li>Phone: +598 99 540 349</li>
+</ul>
+
+<p>Feel free to reach out to me if you have any questions or inquiries. Thank you for visiting our website!</p>
